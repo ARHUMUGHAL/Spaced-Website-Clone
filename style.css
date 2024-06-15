@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "Heading Text";
+    src: url('./Font/Helvetica_Neue_Thin.ttf');
+}
+@font-face {
+    font-family: "Text";
+    src: url('./Font/Axiforma-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* <====================================== Navbar ========================================> */
+
+nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 6;
+    top: -100px;
+}
+.logo{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Text";
+    font-size: 15px;
+    transition: .2s ease;
+}
+nav ul li a:hover{
+    color: gainsboro;
+}
+nav ul li:nth-child(7) a{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.282);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+nav ul li:nth-child(7) a:hover{
+    background-color: white;
+    color: rgb(38, 38, 38);
+}
+
+/* <====================================== Herobox ========================================> */
+
+.herobox{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin-top: -120px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./Assests/herobox\ background\ image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #001531;
+}
+.herobox::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(1,87,126,0) 41%, rgba(1,104,143,0) 43%, rgba(94,1,169,0) 70%, rgba(98,0,255,0.3533788515406162) 100%);
+    position: absolute;
+    opacity: 50%;
+}
+.herobox video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+.herobox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+}
+.herobox div{
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    left: 12%;
+    top: 25%;
+    z-index: 6;
+}
+.herobox div .h2{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.herobox div .h2 h2{
+    color: rgb(208, 208, 208);
+    font-family: "Text";
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+}
+
+.herobox div .h1{
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 12%;
+    overflow: hidden;
+}
+.herobox div h1{
+    color: rgb(208, 208, 208);
+    font-family: "Heading Text";
+    font-size: 60px;
+    position: absolute;
+    top: 100%;
+}
+.herobox div a:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.277);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-family: "Text";
+    position: absolute;
+    bottom: 0%;
+    opacity: 0%;
+    padding-top: 5px;
+    transition: .3s ease;
+}
+.herobox div a:nth-child(3):hover{
+    background-color: white;
+    color: darkblue;
+}
+.herobox div a:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-family: "Text";
+    position: absolute;
+    bottom: 0%;
+    opacity: 0%;
+    padding-top: 5px;
+    right: 0%;
+    transition: .3s ease;
+}
+.herobox div a:nth-child(4):hover{
+    background-color: white;
+    color: darkblue;
+}
+
+
+/* <====================================== Section 1 ========================================> */
+
+.section-1{
+    width: 100%;
+    height: 130vh;
+    background-color: #001531;
+    position: relative;
+}
+.icons{
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0%;
+
+}
+.icons .logo{
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+}
+.icons .logo img{
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+    opacity: 60%;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.icons .logo img:hover{
+    opacity: 80%;
+}
+.section-1-main-content{
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-1-main-content h2{
+    color: #6975FF;
+    font-family: "Text";
+    font-size: 20px;
+    opacity: 0%;
+}
+.section-1-main-content h1{
+    color: rgb(220, 220, 220);
+    font-family: "Heading Text";
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    opacity: 0%;
+}
+.section-1-main-content p{
+    color: rgb(144, 144, 144);
+    font-family: "Text";
+    width: 60%;
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0%;
+}
+.sub-info-section-1{
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-1{
+    width: 32%;
+    height: 100%;
+    position: relative;
+}
+.box-1-icon{
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+}
+.box-1-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.5);
+    opacity: 0%;
+}
+.box-1 .headingText{
+    width: 60%;
+    background-color: transparent;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    overflow: hidden;
+}
+.box-1 .headingText h2{
+    color: white;
+    font-family: "Text";
+    font-size: 18px;
+    position: absolute;
+    top: 100%;
+}
+.box-1 p{
+    color: white;
+    font-family: "Text";
+    font-size: 14px;
+    width: 75%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0%;
+}
+
+/* <====================================== Section 2 ========================================> */
+
+.section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #001531;
+    position: relative;
+    overflow: hidden;
+}
+.section-2 img.section-2-image{
+    opacity: 30%;
+}
+
+.section-2-content-area{
+    width: 32%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+.section-2-content-area h2{
+    color: #6975FF;
+    font-family: "Text";
+    font-size: 18px;
+    opacity: 0%;
+}
+.section-2-content-area .section-2-heading-text{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.section-2-content-area .section-2-heading-text h1{
+    color: white;
+    font-family: "Heading Text";
+    font-size: 38px;
+    position: absolute;
+    top: 100%;
+}
+.section-2-content-area p.third-child{
+    font-family: "Text";
+    color: rgb(159, 159, 159);
+    margin-top: 70px;
+    opacity: 0%;
+}
+.section-2-content-area p:nth-child(4){
+    font-family: "Text";
+    color: rgb(159, 159, 159);
+    margin-top: 20px;
+    opacity: 0%;
+}
+.section-2-content-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.279);
+    text-decoration: none;
+    font-family: "Text";
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    opacity: 0%;
+    transition: .5s linear;
+    padding-top: 5px;
+
+}
+.section-2-content-area a:hover{
+    background-color: white;
+    color: #001531;
+}
+.section-2-image-area{
+    width: 32%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* <====================================== Section 3 ========================================> */
+
+.section-3{
+    width: 100%;
+    height: 100vh;
+    background-color: #001531;
+    position: relative;
+    overflow: hidden;
+}
+.section-3-content-area{
+    width: 32%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+.section-3-content-area h2{
+    color: #6975FF;
+    font-family: "Text";
+    font-size: 18px;
+}
+.section-3-content-area h1{
+    color: white;
+    font-family: "Heading Text";
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 5px;
+}
+.section-3-content-area p:nth-child(3){
+    font-family: "Text";
+    color: rgb(159, 159, 159);
+    margin-top: 20px;
+}
+.section-3-content-area p:nth-child(4){
+    font-family: "Text";
+    color: rgb(159, 159, 159);
+    margin-top: 20px;
+}
+.section-3-content-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.279);
+    text-decoration: none;
+    font-family: "Heading Text";
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: .5s ease;
+    font-size: 18px;
+}
+.section-3-content-area a:hover{
+    background-color: white;
+    color: #001531;
+}
+.section-3-image-area{
+    width: 32%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-3 img.section-3-image{
+    opacity: 30%;
+}
+.section-3-image-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.5);
+}
+
+/* <====================================== Footer ========================================> */
+
+.footer{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #001531;
+}
+.footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+}
+.logo-name{
+    width: 25%;
+    height: 220px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.logo-name .logo-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.logo-name .logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    opacity: 80%;
+    margin-top: -100px;
+}
+.logo-name p{
+    color: rgb(203, 203, 203);
+    font-family: "Text";
+    font-size: 18px;
+    position: absolute;
+    top: 25%;
+    margin-left: 10px;
+}
+.links{
+    width: 15%;
+    height: 50%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+.links h5{
+    color: rgb(151, 151, 151);
+    font-family: "Heading Text";
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-top: 20px;
+    font-family: "Heading Text";
+}
+.links a:nth-child(3){
+    top: 18%;
+}
+.links a:nth-child(4){
+    top: 30%;
+}
+.links a:nth-child(5){
+    top: 42%;
+}
+.links:nth-child(4){
+    left: 55%;
+}
+.links:nth-child(5){
+    left: 70%;
+}
